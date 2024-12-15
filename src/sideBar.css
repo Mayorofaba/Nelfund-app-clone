@@ -1,0 +1,304 @@
+.show,
+.show1 {
+    min-height: 100vh;
+    width: 8em;
+    margin-left: 10px;
+    background-color: white;
+    margin-top: 0px;
+    padding-top: 0px;
+    position: fixed;
+    border-bottom: 2px solid #a9a9a9;
+    color: green;
+    border-right: 2px solid #a9a9a9;
+
+
+
+}
+
+
+/* .Menu {
+    display: flex;
+    text-align: left;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+
+} */
+
+.logoutall {
+    display: flex;
+    /* position: fixed; */
+    bottom: 0;
+    left: 0;
+    margin-left: 20px;
+    vertical-align: middle;
+    margin-top: auto;
+
+
+}
+
+.logoutall h2 {
+    margin-left: 10px;
+    font-size: 20px;
+
+}
+
+.hide {
+    min-height: 100vh;
+    width: 10em;
+    background-color: white;
+    /* border-right: 2px solid #a9a9a9; */
+    margin-left: 20px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+
+
+
+.menuItem {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: green;
+    /* border-right: 2px solid #a9a9a9; */
+
+
+}
+
+
+
+
+
+
+.menuItem svg {
+
+    margin-right: 10px;
+}
+
+
+.menuListContainer {
+    list-style: none;
+    padding-top: 20px;
+
+}
+
+.small-height {
+    width: 150px;
+    /* border-right: 2px solid #a9a9a9; */
+
+
+}
+
+.large-height {
+    width: 250px;
+    /* border-right: 2px solid #a9a9a9; */
+    background-color: white;
+    margin-left: 2em;
+
+}
+
+
+/* styling the header */
+.side{
+    margin: 2em;
+    gap: 0.5em;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #a9a9a9;
+
+}
+
+
+.logo {
+    font-size: 50px;
+    border-right: 2px solid #a9a9a9;
+    width: 130px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    min-width: 2.8em;
+}
+
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 40px;
+
+}
+
+.username {
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+
+
+.headerDrop {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    z-index: 1;
+}
+
+
+/* 
+.pageholder {
+
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+*/
+
+
+.pageview {
+
+
+    width: 300px;
+    height: 60px;
+    margin: 0 auto;
+    margin-right: 10px;
+
+
+
+}
+
+
+.requestbtn {
+
+
+    font-size: 20px;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 2em;
+
+}
+
+
+.welText {
+    font-size: 25px;
+}
+
+
+.welcome {
+
+
+    width: 600px;
+    margin: 0 auto;
+    margin-left: 0px;
+
+}
+ 
+
+
+ 
+.mainPartOfPage {
+    display: block;
+    max-width: screen;
+
+ } 
+
+
+
+
+.faqAll {
+    display: flex;
+    margin-top: 200px;
+    background-color: rgb(225, 232, 225);
+    height: 30em;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 90em;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+
+
+
+}
+
+.faq {
+    border: 2px solid gray;
+    margin: 10px;
+    width: 25em;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    align-items: center;
+    margin-top: 30px;
+    height: 28em;
+
+}
+
+.faq h2 {
+    font-size: 40px;
+    margin-top: 150px;
+}
+
+.LoanDetails {
+    display: flex;
+    margin-top: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
+    /* justify-content: space-between; */
+    width: 90em;
+    gap: 20px;
+    /* background-color: yellow; */
+
+
+}
+
+.amount {
+    display: flex;
+    border: 2px solid gray;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    border-radius: 20px;
+     gap: 1em;
+    width: 30em;
+    /* background-color: red; */
+
+}
+
+.image {
+    font-size: 50px;
+    background-color: antiquewhite;
+    border-radius: 50%;
+    color: green;
+}
+
+.started {
+    background: white;
+    color: green;
+    display: inline-block;
+    padding: 20px;
+    align-items: flex-start;
+    border-radius: 20px;
+    margin-left: 0px;
+}

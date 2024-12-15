@@ -1,0 +1,42 @@
+.secondHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-bottom: 2px solid black;
+    align-items: center;
+}
+
+
+.headerMiddle ul {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.headerMiddle ul li {
+
+    list-style: none;
+    margin: 20px;
+}
+
+/* .writeUp {
+    margin-top: 200px;
+} */
+
+.title {
+    border-bottom: 2px solid rgb(240, 237, 237);
+    margin-bottom: 3em;
+}
+
+.headerRight{
+
+align-items: center;
+background-color: rgb(213, 206, 206);
+border-radius: 40%;
+padding-left: 0.5em;
+padding-right: 0.5em;
+
+
+}
