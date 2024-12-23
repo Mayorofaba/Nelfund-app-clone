@@ -4,6 +4,7 @@ import { useState } from 'react';
 import './sideBar.css'
 import { FaSortUp } from "react-icons/fa";
 import { FaSortDown } from 'react-icons/fa';
+import { Link } from "react-router-dom";
 
 
 export default function HeaderAndMenu() {
@@ -22,8 +23,9 @@ export default function HeaderAndMenu() {
         <div className="headerAndMenu">
             {/* header starts */}
             <div className="header">
-                <div className="logo"><img src="https://portal.nelf.gov.ng/assets/NELFUND_Logo.svg" alt="logo" />  </div>
-
+            <Link to="/" >
+            <div className="logo"><img src="https://portal.nelf.gov.ng/assets/NELFUND_Logo.svg" alt="logo" />  </div>
+            </Link>
 
                 <div className="right">
 

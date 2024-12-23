@@ -1,8 +1,39 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useState } from 'react';
 
 
 export default function RequestloanTwo() {
+
+    const [selectedFiles, setSelectedFiles] = useState([]);
+    const [uploadedFiles, setUploadedFiles] = useState([]);
+  
+    const handleFileChange = (event) => {
+      setSelectedFiles(event.target.files);
+    };
+  
+    const handleUpload = () => {
+      const formData = new FormData();
+
+
+      Array.from(selectedFiles).forEach((file) => {
+        formData.append('files', file);
+      });
+  
+      fetch('/api/upload', {
+        method: 'POST',
+        body: formData,
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          setUploadedFiles(data);
+        })
+        .catch((error) => console.error(error));
+    };
+  
+  
+
+
     return (
         <div className=' items-center rounded-xl bg-slate-50 border w-[55em] m-20  mr-[20em] ml-[25em] ' >
 
@@ -16,14 +47,32 @@ export default function RequestloanTwo() {
                     <div><h2>Admission Letter <span>(mandatory)</span> </h2>
                         <p>JPEG or PDF only</p>
                     </div>
-                    <div><h2>Upload Document</h2></div>
+                    <div>
+      <input type="file" multiple onChange={handleFileChange} />
+      <button onClick={handleUpload}>Upload Files</button>
+      <ul>
+        {uploadedFiles.map((file) => (
+          <li key={file.name}>{file.name}</li>
+        ))}
+      </ul>
+    </div>
+
                 </div>
 
                 <div className='mb-10 border rounded-md  mt-5 p-4 flex justify-between ' >
                     <div><h2>Student ID Card <span>(optional)</span> </h2>
                         <p>JPEG or PDF only</p>
                     </div>
-                    <div><h2>Upload Document</h2></div>
+                    <div>
+      <input type="file" multiple onChange={handleFileChange} />
+      <button  onClick={handleUpload}>Upload Files</button>
+      <ul>
+        {uploadedFiles.map((file) => (
+          <li key={file.name}>{file.name}</li>
+        ))}
+      </ul>
+    </div>
+
                 </div>
 
                 <h2>Upkeep Loan </h2>

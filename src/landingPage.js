@@ -20,7 +20,9 @@ export default function LandingPage() {
                     {/* pageview */}
 
                     <div className="pageview ">
+                    <Link to="/loans/application" >
                         <h2 className="requestbtn mx-auto">Request for Student Loan</h2>
+                    </Link>
                     </div>
 
                     {/* welcome message  */}

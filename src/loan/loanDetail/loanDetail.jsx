@@ -5,7 +5,7 @@ import { FaFileDownload } from 'react-icons/fa';
 
 
 export default function WhyChooseUs() {
-  const carData = [
+  const loanData = [
     {
       title: 'Student Name',
       description:
@@ -58,11 +58,11 @@ export default function WhyChooseUs() {
 
         <div className="w-full flex justify-between px-4 ">
           <div className="w-full flex basis-2/3 flex-wrap items-center justify-center gap-4">
-            {carData.map((car, index) => (
+            {loanData.map((loan, index) => (
               <LoanDetailCard
                 key={index}
-                title={car.title}
-                description={car.description}
+                title={loan.title}
+                description={loan.description}
               />
             ))}
           </div>
