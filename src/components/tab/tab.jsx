@@ -1,38 +1,73 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import Aboutme from "../aboutme";
+import PersonalDetailTab from "../profileTabs/personalDetailTab";
+import ContactDetailTab from "../profileTabs/contactDetailTab";
+import EducationalDetail from "../profileTabs/educationalDetail";
+import AccountDetail from "../profileTabs/AccountDetail";
 
 function Tab() {
-  const [activeTab, setActiveTab] = useState('tab1');
+  const [activeTab, setActiveTab] = useState("tab1");
 
   const tabs = [
-    { id: 'tab1', title: 'Personal Details' },
-    { id: 'tab2', title: 'Contact Details' },
-    { id: 'tab3', title: 'Educational Details' },
-    { id: 'tab4', title: 'Account Details' },
-
+    { id: "tab1", title: "Personal Details" },
+    { id: "tab2", title: "Contact Details" },
+    { id: "tab3", title: "Educational Details" },
+    { id: "tab4", title: "Account Details" },
   ];
 
   return (
-   <div className='ml-20 mt-20' > 
-     <div className="max-w-10xl mx-auto bg-white rounded-lg shadow-md">
-      <div className="flex justify-center space-x-4 border-b">
-        {tabs.map((tab) => (
-          <button
-            key={(tab.id)}
-            className={`py-2 px-4 rounded-t-lg ${activeTab === (tab.id) ? 'bg-blue-500 text-white' : 'text-gray-600 hover:bg-gray-100'}`}
-            onClick={() => setActiveTab((tab.id))}>
-            {tab.title}
-          </button>
-        ))}
-      </div>
-      <div className="p-4">
-        {activeTab === 'tab1' && <div>Tab 1 content</div>}
-        {activeTab === 'tab2' && <div>Tab 2 content</div>}
-        {activeTab === 'tab3' && <div>Tab 3 content</div>}
-        {activeTab === 'tab4' && <div>Tab 4 content</div>}
+    <div>
+      <div className="max-w-60xl mx-auto bg-white rounded-lg shadow-md">
+        <div className="flex justify-center space-x-4 border-b">
+          {tabs.map((tab) => (
+            <button
+              key={tab.id}
+              className={`py-2 px-4 flex-nowrap rounded-t-lg ${
+                activeTab === tab.id
+                  ? "bg-white text-green-900 font-extrabold border-b-2 border-green-700 "
+                  : "text-gray-400 hover:bg-gray-100 font-bold border-none "
+              }  `}
+              onClick={() => setActiveTab(tab.id)}
+            >
+              {tab.title}
+            </button>
+          ))}
+        </div>
+        <div className="p-4">
+          {/* tab 1 */}
+          {activeTab === "tab1" && (
+            <div>
+              <Aboutme />
+              <PersonalDetailTab />
+            </div>
+          )}
 
+          {/* tab 2 */}
+          {activeTab === "tab2" && (
+            <div>
+              <Aboutme />
+              <ContactDetailTab />
+            </div>
+          )}
+
+          {/* tab 3 */}
+          {activeTab === "tab3" && (
+            <div>
+              <Aboutme />
+              <EducationalDetail />
+            </div>
+          )}
+
+          {/* tab 4 */}
+          {activeTab === "tab4" && (
+            <div>
+              <Aboutme />
+              <AccountDetail />
+            </div>
+          )}
+        </div>
       </div>
     </div>
-   </div>
   );
 }
 

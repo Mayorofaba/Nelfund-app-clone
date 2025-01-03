@@ -14,8 +14,6 @@
 //     <BrowserRouter>
 //       <div className="App">
 
-
-
 //         <Routes>
 
 //           <Route path='/' element={<LandingPage />} />
@@ -26,44 +24,27 @@
 //           <Route path='/profile' element={<Profile />} />
 //           <Route path='/details' element={<Layout />} />
 
-
-
 //         </Routes>
-
-
-
 
 //       </div>
 
 //     </BrowserRouter>
-
-
-
-
-
-
-
-
-
-
-
-
 
 //   );
 // }
 
 // export default App;
 
-
-
-import './App.css'
-import PageRouter from './router'
+import "./App.css";
+import PageRouter from "./components/router";
+import React, { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    console.log("Screen width: ", window.innerWidth);
+  }, []);
 
-  return     <PageRouter />
-
-  
+  return <PageRouter />;
 }
 
-export default App
+export default App;

@@ -1,0 +1,37 @@
+{
+  "personalDetails": {
+    "firstName": "Nwabuko",
+    "lastName": "Chinedu",
+    "middleName": "Michael",
+    "dateOfBirth": "2000-09-24",
+    "gender": "Male"
+  },
+  "contactDetails": {
+    "emailAddress": "michealnwabuko@gmail.com",
+    "phoneNumber": "+1 123 456 7890",
+    "stateOfOrigin": "Lagos",
+    "localGovernmentOfOrigin": "Ikeja",
+    "fullResidentialAddress": "123 Main St, New York",
+    "stateOfResidence": "New York",
+    "localGovernmentOfResidence": "Manhattan"
+  },
+  "educationalDetails": {
+    "higherInstitution": "University of Lagos",
+    "matricNumber": "UG/2010/12345",
+    "courseOfStudy": "Computer Science",
+    "faculty": "Science",
+    "department": "Computer Science",
+    "programType": "Full-time",
+    "level": "500",
+    "academicSession": "2010/2011"
+  },
+  "accountDetails": {
+    "bankVerificationNumber": "12345678901",
+    "bankName": "Guaranty Trust Bank",
+    "bankAccountNumber": "0123456789"
+  },
+  "form": {
+    "progress": 80
+  }
+
+}
